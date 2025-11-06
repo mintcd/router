@@ -1,0 +1,13 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    {
+      "source": "/annotation",
+      "destination": "applications-git-main-chocomint-projects.vercel.app"
+    },
+    {
+      "source": "/notes",
+      "destination": "notes-eight-sepia.vercel.app"
+    }
+  ]
+}
