@@ -3,11 +3,11 @@
   "rewrites": [
     {
       "source": "/annotation",
-      "destination": "https://applications-git-main-chocomint-projects.vercel.app/annotation"
+      "destination": "https://applications-khaki.vercel.app/annotation"
     },
     {
       "source": "/annotation/:path*",
-      "destination": "https://applications-git-main-chocomint-projects.vercel.app/annotation/:path*"
+      "destination": "https://applications-khaki.vercel.app/annotation/:path*"
     },
     {
       "source": "/notes",
