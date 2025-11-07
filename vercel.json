@@ -11,11 +11,11 @@
     },
     {
       "source": "/notes",
-      "destination": "https://notes-eight-sepia.vercel.app/notes"
+      "destination": "https://notes-jade-eight.vercel.app/notes"
     },
     {
       "source": "/notes/:path*",
-      "destination": "https://notes-eight-sepia.vercel.app/notes/:path*"
+      "destination": "https://notes-jade-eight.vercel.app/notes/:path*"
     }
   ]
 }
