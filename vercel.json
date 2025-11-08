@@ -3,39 +3,35 @@
   "rewrites": [
     {
       "source": "/annotation",
-      "destination": "https://applications-git-main-chocomint-projects.vercel.app/annotation"
+      "destination": "https://applications-khaki.vercel.app/annotation"
     },
     {
       "source": "/annotation/",
-      "destination": "https://applications-git-main-chocomint-projects.vercel.app/annotation/"
+      "destination": "https://applications-khaki.vercel.app/annotation/"
     },
     {
       "source": "/annotation/:path*",
-      "destination": "https://applications-git-main-chocomint-projects.vercel.app/annotation/:path*"
+      "destination": "https://applications-khaki.vercel.app/annotation/:path*"
     },
     {
       "source": "/annotation/:path*/",
-      "destination": "https://applications-git-main-chocomint-projects.vercel.app/annotation/:path*/"
+      "destination": "https://applications-khaki.vercel.app/annotation/:path*/"
     },
     {
       "source": "/notes",
-      "destination": "https://notes-eight-sepia.vercel.app/notes"
+      "destination": "https://notes-jade-eight.vercel.app/notes"
     },
     {
       "source": "/notes/",
-      "destination": "https://notes-eight-sepia.vercel.app/notes/"
+      "destination": "https://notes-jade-eight.vercel.app/notes/"
     },
     {
       "source": "/notes/:path*",
-      "destination": "https://notes-eight-sepia.vercel.app/notes/:path*"
+      "destination": "https://notes-jade-eight.vercel.app/notes/:path*"
     },
     {
       "source": "/notes/:path*/",
-      "destination": "https://notes-eight-sepia.vercel.app/notes/:path*/"
-    },
-    {
-      "source": "",
-      "destination": "https://chocomint-projects.vercel.app/"
+      "destination": "https://notes-jade-eight.vercel.app/notes/:path*/"
     }
   ]
 }
