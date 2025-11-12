@@ -4,6 +4,6 @@ compatibility_date = "2024-11-01"
 
 # Route the entire domain through this Worker
 routes = [
-  { pattern = "yourdomain.com/*" },
-  { pattern = "www.yourdomain.com/*" }
+  "mintcd.dev/*",
+  "www.mintcd.dev/*"
 ]
