@@ -31,10 +31,10 @@ export default {
     };
 
     if (path.startsWith("/annotation")) {
-      return forward("annotation-czy.pages.dev", /^\/annotation/);
+      return forward("annotation-czy.pages.dev", "");
     }
     if (path.startsWith("/notes")) {
-      return forward("notes-5qd.pages.dev", /^\/notes/);
+      return forward("notes-5qd.pages.dev", "");
     }
 
     return new Response("Not found", { status: 404 });
