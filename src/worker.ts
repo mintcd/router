@@ -10,8 +10,24 @@ export default {
       target.hostname = originHost;
       target.protocol = "https:"; // Pages is HTTPS
       target.pathname = path.replace(strip, "") || "/"; // keep trailing slash behavior
-      // Let Cloudflare set Host for the new origin automatically
-      return fetch(new Request(target.toString(), req));
+
+      // Create a new request for the Pages origin and ensure the Host header
+      // matches the Pages hostname. If we forward the original request object
+      // directly the Host header will remain the incoming hostname (e.g.
+      // "mintcd.dev") and Cloudflare Pages will return a 404 because it
+      // doesn't recognize that Host. Setting the Host to the Pages origin
+      // ensures Pages serves the expected site.
+      const headers = new Headers(req.headers);
+      headers.set('host', originHost);
+
+      const init: RequestInit = {
+        method: req.method,
+        headers,
+        body: req.body,
+        redirect: 'manual'
+      };
+
+      return fetch(new Request(target.toString(), init));
     };
 
     if (path.startsWith("/annotation")) {
